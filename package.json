@@ -1,0 +1,22 @@
+{
+  "name": "async-await-demo",
+  "version": "1.0.0",
+  "description": "Demo async await feature in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranaykumar/async-await-demo.git"
+  },
+  "author": "pranay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranaykumar/async-await-demo/issues"
+  },
+  "homepage": "https://github.com/pranaykumar/async-await-demo#readme",
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}
