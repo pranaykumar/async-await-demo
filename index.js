@@ -11,11 +11,12 @@
     const response = await fetch(url);
     const user = await response.json();
 
-    console.log(user.name);
-    console.log(user.location);
-      
+    return user;
   }
 
-  showGitHubber('pranaykumar');
+  showGitHubber('pranaykumar').then(user => {
+    console.log(user.name);
+    console.log(user.location);
+  });
 
 }());
