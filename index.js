@@ -4,7 +4,7 @@
 
   const fetch = require('node-fetch');
 
-  const showGitHubber = async function (handle) {
+  const showGitHubber = async(handle) => {
     const url = `https://api.github.com/users/${handle}`;
     console.log(url);
 
@@ -14,9 +14,10 @@
     return user;
   }
 
-  showGitHubber('pranaykumar').then(user => {
-    console.log(user.name);
-    console.log(user.location);
-  });
+(async () => {
+  const user = await showGitHubber('pranaykumar');
+  console.log(user.name);
+  console.log(user.location);
+})();
 
 }());
