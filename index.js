@@ -16,8 +16,8 @@
   (async() => {
     const client = new GitHubAPIClient();
     const user = await client.showGitHubber('pranaykumar');
-    console.log(user.name);
-    console.log(user.location);
+    console.log(`user name --> ${user.name}`);
+    console.log(`user location --> ${user.location}`);
   })();
 
 }());
